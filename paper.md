@@ -7,27 +7,18 @@ tags:
   - pride archive
   - big data
 authors:
-  - name: Selvakumar Kamatchinathan
+  - name: Pedro Matos
     affiliation: 1
-  - name: Suresh Hewapathirana
+  - name: Leda Marise
     affiliation: 1
-  - name: Chakradhar Bandla
+  - name: Dermeval Carinhanda
     orcid: 0000-0001-6392-3759
     affiliation: 1
-  - name: Santiago Insua
-    orcid: 0000-0002-9247-243X
-    affiliation: 1
-  - name: Juan Antonio Vizcaíno
-    orcid: 0000-0002-3905-4335
-    affiliation: 1
-  - name: Yasset Perez-Riverol
-    orcid: 0000-0001-6579-6941
-    affiliation: 1  
 affiliations:
- - name: European Molecular Biology Laboratory, European Bioinformatics Institute (EMBL-EBI), Wellcome Trust Genome Campus, Hinxton, Cambridge CB10 1SD, United Kingdom
+ - name: Instituto de Estudos Avançados, DCTA, Brazil
    index: 1
-repository: https://github.com/PRIDE-Archive/pridepy   
-date: 26 September 2024
+repository: https://github.com/matos-pedro/Shock_Tunnel_Calculator
+date: 25 March 2025
 bibliography: paper.bib
 ---
 # Summary
