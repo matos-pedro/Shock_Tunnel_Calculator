@@ -153,83 +153,67 @@ The results are presented in three stages: first, in section 2.1, parameters cal
 ## Shock Tube
 
 The calculations for the shock tube were compared to results obtained through the programs GasEq[@morley07], CeaRun[@gordon1994], and WiSTL[@wisl2025]. While the first two are programs used to calculate thermodynamic properties for chemical equilibrium of various mixtures, the last one corresponds to a calculator developed for studying shock tubes, assuming the simplification of a calorically perfect gas.
+
+
 The comparisons are made by fixing the pressure (p1) at 101 kPa and temperature (T1) at 298 K in the low-pressure section, while varying the shock Mach number from 2 to 15. Tables 1 and 2 summarize, for the shock and reflected conditions respectively, the pressure and temperature data obtained through the app and their corresponding values from other programs.
+
+
 It is noted that the largest discrepancies occur when comparing results from WiSTL, a program whose approach corresponds to a limiting theoretical case, characterized by neglecting phenomena such as dissociation and activation of internal energy modes.
 The 'Deviation %' column, constructed to illustrate the maximum relative deviation between parameters calculated by the app and the chemical equilibrium programs, shows deviations lower than 3% for pressure and 2% for temperature data, respectively.
 
 
-
-```
-+-------------------+------------+----------+----------+
-| Header 1          | Header 2   | Header 3 | Header 4 |
-|                   |            |          |          |
-+:=================:+:==========:+:========:+:========:+
-| row 1, column 1   | column 2   | column 3 | column 4 |
-+-------------------+------------+----------+----------+
-| row 2             | cells span columns               |
-+-------------------+------------+---------------------+
-| row 3             | cells      | - body              |
-+-------------------+ span rows  | - elements          |
-| row 4             |            | - here              |
-+===================+============+=====================+
-| Footer                                               |
-+===================+============+=====================+
-```
-
-
-
 Table 1. Comparison between the app and other similar programs; initial conditions: p1 = 101 kPa, T1 = 298 K. The data corresponds to the calculated pressures for shock and reflected conditions.
 
-+-------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
-| Pressure Comparison                              | Shocked Condition:                                                                                                                                  | Reflected Condition:                                                                                                                                |
-+:-------------------+-----------------:+:----------------:+:-----------------:+:------------------:+:----------------:+:-----------------:+:------------------+------------------+------------------+------------------+-----------------:+
-| Ms                            | us (m/s)                 | WiSTL                    | Gaseq                     | CeaRun                  | App                      | Δ%                           | WiSTL                    | Gaseq                    | CeaRun                  | App                       | Δ%                         |
-+-------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
-| 2                               | 692                        | 0.46            		 | 0.46             		| 0.46             		| 0.47             		| 2.0             		 | 1.52              		| 1.52             		| 1.52             		| 1.56            		 | 2.8              |
-| 5                               | 1730                       | 2.94             		 | 3.02             		| 3.01             		| 3.06            		 | 1.6            		 | 19.36            		| 21.00            		| 20.99            		| 21.32           		 | 1.6              |
-| 7                               | 2422                      | 5.78             		 | 6.02             		| 6.01             		| 6.11            		 | 1.7              		 | 41.63            		| 49.07            		| 49.00            		| 49.72           		 | 1.5              |
-| 10                             | 3461                      | 11.8                         | 12.6             		| 12.6             		| 12.8            		 | 1.8             		 | 89.51            		| 127.0           		 | 126.4            		| 129.5            		| 2.4              |
-| 15                             | 5191                       | 26.6            		 | 28.7             		| 28.7             		| 29.3             		| 1.7             		 | 207.3            		| 331.9            		| 328.5            		| 336.4           		 | 2.4              |
-+-------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
+| Pressure Comparison |               | Shocked Condition: |            |             |          | Reflected Condition: |            |             |          |          |
+| ------------------- | ------------- | ------------------ | ---------- | ----------- | -------- | -------------------- | ---------- | ----------- | -------- | -------- |
+| **Ms**             | **us (m/s)** | **WiSTL**         | **Gaseq** | **CeaRun** | **App** | **WiSTL**           | **Gaseq** | **CeaRun** | **App** | **Δ%** |
+| 2                   | 692           | 0.46               | 0.46       | 0.46        | 0.47     | 2.0                  | 1.52       | 1.52        | 1.52     | 1.56     |
+| 5                   | 1730          | 2.94               | 3.02       | 3.01        | 3.06     | 1.6                  | 19.36      | 21.00       | 20.99    | 21.32    |
+| 7                   | 2422          | 5.78               | 6.02       | 6.01        | 6.11     | 1.7                  | 41.63      | 49.07       | 49.00    | 49.72    |
+| 10                  | 3461          | 11.8               | 12.6       | 12.6        | 12.8     | 1.8                  | 89.51      | 127.0       | 126.4    | 129.5    |
+| 15                  | 5191          | 26.6               | 28.7       | 28.7        | 29.3     | 1.7                  | 207.3      | 331.9       | 328.5    | 336.4    |
+
+
 
 Table 2. Comparison between the app and other similar programs; initial conditions: p1 = 101 kPa, T1 = 298 K. The data corresponds to the calculated temperatures for shock and reflected conditions.
 
-| Input |          | Shocked:        |       |        |      | Reflected: |       |        |       |      |
-| ----- | -------- | ------------------- | ----- | ------ | ---- | ---------- | ----- | ------ | ----- | ---- |
-| Ms    | us (m/s) | WiSTL               | Gaseq | CeaRun | App  | WiSTL      | Gaseq | CeaRun | App   | Δ%  |
-| 2     | 692      | 504                 | 501   | 501    | 501  | 747        | 730   | 729    | 732   | 0.36 |
-| 5     | 1730     | 1735                | 1588  | 1587   | 1601 | 3557       | 2842  | 2842   | 2875  | 1.15 |
-| 7     | 2422     | 3133                | 2642  | 2642   | 2664 | 6753       | 4553  | 4548   | 4525  | 0.51 |
-| 10    | 3461     | 6103                | 4275  | 4272   | 4252 | 13544      | 7686  | 7546   | 7567  | 0.28 |
-| 15    | 5191     | 13380               | 7330  | 7272   | 7258 | 30186      | 12057 | 11694  | 11653 | 0.35 |
+| Input   |               | Shocked:        |            |             |          | Reflected: |            |             |          |          |
+| ------- | ------------- | ------------------- | ---------- | ----------- | -------- | ---------- | ---------- | ----------- | -------- | -------- |
+| **Ms** | **us (m/s)** | **WiSTL**          | **Gaseq** | **CeaRun** | **App** | **WiSTL** | **Gaseq** | **CeaRun** | **App** | **Δ%** |
+| 2       | 692           | 504                 | 501        | 501         | 501      | 747        | 730        | 729         | 732      | 0.36     |
+| 5       | 1730          | 1735                | 1588       | 1587        | 1601     | 3557       | 2842       | 2842        | 2875     | 1.15     |
+| 7       | 2422          | 3133                | 2642       | 2642        | 2664     | 6753       | 4553       | 4548        | 4525     | 0.51     |
+| 10      | 3461          | 6103                | 4275       | 4272        | 4252     | 13544      | 7686       | 7546        | 7567     | 0.28     |
+| 15      | 5191          | 13380               | 7330       | 7272        | 7258     | 30186      | 12057      | 11694       | 11653    | 0.35     |
 
 
 ### 4.2 Free Stream
 
-The procedure adopted for estimating the free stream is validated by comparing it with experimental data for the Pitot pressure obtained through shock tunnel T2 [12].
-For this, the initial temperature of the test gas was fixed at 298 K, and the area ratio of the nozzle was set to 220.57. The input parameters that varied were: initial pressure (p1), incident shock wave speed (us), and reservoir pressure (p0).
-Tables 3 and 4 summarize the comparison between measured and calculated Pitot pressures, distinguishing by the composition of the Driver gas: Table 3 was constructed from experiments using helium as the Driver gas at 20.7 MPa, while Table 4 was based on experiments with air at the same pressure of 20.7 MPa.
-The deviation shown corresponds to the absolute deviation calculated between the experimental and calculated Pitot values. For comparison purposes, the tables also display the equivalent area ratios estimated from the experimental Pitot pressure recorded.
+The procedure adopted for estimating the free stream is validated by comparing it with experimental data for the Pitot pressure obtained through shock tunnel T2 [@pereira09]. For this, the initial temperature of the test gas was fixed at 298 K, and the area ratio of the nozzle was set to 220.57. The input parameters that varied were: initial pressure (p1), incident shock wave speed (us), and reservoir pressure (p0). 
+
+Tables 3 and 4 summarize the comparison between measured and calculated Pitot pressures, distinguishing by the composition of the Driver gas: Table 3 was constructed from experiments using helium as the Driver gas at 20.7 MPa, while Table 4 was based on experiments with air at the same pressure of 20.7 MPa. The deviation shown corresponds to the absolute deviation calculated between the experimental and calculated Pitot values. For comparison purposes, the tables also display the equivalent area ratios estimated from the experimental Pitot pressure recorded.
 
 #### Table 3. Experimental Pitot Pressure (pt, Experimental Output) and Calculated Pitot Pressure (pt, APP-Calculated) and Equivalent Area Ratio Calculated (eq A/A*, APP-Calculated); Driver Gas: Helium.
 
-| Input   | Experimental Output | APP - Calculated | Deviation |
-| ------- | ------------------- | ---------------- | --------- |
-| p1(kPa) | us (m/s)            | Ms               | p0 (MPa)  |
-| 6.7     | 2049                | 5.92             | 12.5      |
-| 26.7    | 1706                | 4.93             | 12.5      |
-| 96      | 1427                | 4.12             | 13.7      |
-| 288     | 1154                | 3.34             | 19.5      |
+| Input    |          |      |          | Experimental Output | APP - Calculated |         | Deviation |
+| -------- | -------- | ---- | -------- | ------------------- | ---------------- | ------- | --------- |
+| p1 (kPa) | us (m/s) | Ms   | p0 (MPa) | pt (kPa)            | pt (kPa)         | eq A/A* | (%)       |
+| 6.7      | 2049     | 5.92 | 12.5     | 112                 | 103              | 204     | 8.3       |
+| 26.7     | 1706     | 4.93 | 12.5     | 105                 | 100              | 209     | 5.1       |
+| 96       | 1427     | 4.12 | 13.7     | 112                 | 106              | 208     | 5.6       |
+| 288      | 1154     | 3.34 | 19.5     | 156                 | 147              | 208     | 5.8       |
+
+
 
 #### Table 4. Experimental Pitot Pressure (pt, Experimental Output) and Calculated Pitot Pressure (pt, APP-Calculated) and Equivalent Area Ratio Calculated (eq A/A*, APP-Calculated); Driver Gas: Air.
 
-| Input   | Experimental Output | APP - Calculated | Deviation |
-| ------- | ------------------- | ---------------- | --------- |
-| p1(kPa) | us (m/s)            | Ms               | p0 (MPa)  |
-| 6.7     | 1050                | 3.04             | 3.5       |
-| 26.7    | 931                 | 2.69             | 6.1       |
-| 96      | 846                 | 2.44             | 3.1       |
-| 288     | 737                 | 2.13             | 5.4       |
+| Input    |          |      |          | Experimental Output | APP - Calculated |         | Deviation     |
+| -------- | -------- | ---- | -------- | ------------------- | ---------------- | ------- | ------------- |
+| p1 (kPa) | us (m/s) | Ms   | p0 (MPa) | pt (kPa)            | pt (kPa)         | eq A/A* | Deviation (%) |
+| 6.7      | 1050     | 3.04 | 3.5      | 34                  | 27               | 176     | 25.4          |
+| 26.7     | 931      | 2.69 | 6.1      | 58                  | 46               | 175     | 26.5          |
+| 96       | 846      | 2.44 | 3.1      | 29                  | 23               | 175     | 26.9          |
+| 288      | 737      | 2.13 | 5.4      | 50                  | 40               | 174     | 26.5          |
 
 The results calculated by the app show that when using helium as the Driver gas, which induces the test gas to higher stagnation pressures, the Pitot pressures showed deviations of at most 8.3%, lower than the 26% relative deviation observed when using air as the Driver gas. In absolute terms, the difference in pressures ranged from 5 to 12 kPa in both cases.
 
