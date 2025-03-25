@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textIsSelectable="true"
+    android:justificationMode="inter_word"
+    tools:context=".Activity_info">
+
+    <TextView
+        android:id="@+id/titleHow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:alpha="100"
+        android:justificationMode="inter_word"
+        android:text="More Informations"
+        android:textColor="@color/colorAccent"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textIsSelectable="true"
+        app:fontFamily="sans-serif-condensed-light"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleHow"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="0dp"
+        android:textIsSelectable="true"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="How does it work?"
+                android:textColor="@color/colorAccent"
+                android:textIsSelectable="true"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-condensed" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:justificationMode="inter_word"
+                    android:text="This app estimates the conditions of real-air flows processed by shock waves and expansions induced by shock tubes and tunnels facilities."
+                android:textColor="@color/colorAccent"
+                android:textIsSelectable="true"
+                android:textSize="16sp"
+                app:fontFamily="sans-serif-condensed" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:justificationMode="inter_word"
+                android:text="The minimum parameters necessary to run the app are the driven pressure and temperature (p1 and T1), and the primary shock speed (us). These parameters can be inserted directly in the 'Experimental Data' tab or calculated in the ’Analytical Ms' tab from given initial driven and driver conditions p1, T1, p4 and T4. In the analytical tab, the incident shock speed us is calculated analytically from the ordinary shock tube equation for a corrected initial pressure ratio of (p4/p1).g and speed ratio of (a4/a1).g^[ (g4-1)/g4 ], where 'g' is the Gain Factor.  This factor is used to include shock tubes with non-constant Driver-to-Driven area section in the ordinary equation and can be used to fit the model to experimental data for a particular shock tube.
+"
+                android:textColor="@color/colorAccent"
+                android:textIsSelectable="true"
+                android:textSize="16sp"
+                app:fontFamily="sans-serif-condensed" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="The Shocked and Reflected conditions are calculated assuming equilibrium air successively processed by normal incident and reflected shock waves. To calculate the latter state, the intensity of the reflected wave is assumed to bring the shocked gas to the rest. By setting the reservoir pressure (p0), the app also estimates the reservoir state from the calculated reflected state by assuming an isentropic transformation."
+                android:textColor="@color/colorAccent"
+                android:textIsSelectable="true"
+                android:textSize="16sp"
+                app:fontFamily="sans-serif-condensed" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="The nozzle exit conditions, otherwise, are calculated assuming a quasi-one-dimensional isentropic frozen flow from the reservoir to the normal shock created by the Pitot tube sensor. In the region after the normal shock, the flow is considered to be again in equilibrium and the conditions at the Pitot are calculated from isentropic relations. Both area ratio and Pitot pressure (pt) can be inserted as nozzle exit constraints. "
+                android:textColor="@color/colorAccent"
+                android:textIsSelectable="true"
+                android:textSize="16sp"
+                app:fontFamily="sans-serif-condensed" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="References:"
+                android:textColor="@color/colorAccent"
+                android:textIsSelectable="true"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-condensed" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="1 - The Equilibrium Air Parameters:\nAdapted from ' http://www.dept.aoe.vt.edu/~devenpor/tgas/ ' based on 'Simplified curve fits for the thermodynamic properties of equilibrium air’ by Srinivasan S., Tannehill J.C., and Weilmuenster K.J. (NASA RP1181, 1987)"
+                android:textColor="@color/colorAccent"
+                android:textIsSelectable="true"
+                android:textSize="16sp"
+                app:fontFamily="sans-serif-condensed" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="2 - The Gain Factor g:\nFrom 'The production of high temperature gases in shock tubes’ by Resler, E.L., Shao-Chi Lin, and Arthur K.. (JAP, 1952) "
+                android:textColor="@color/colorAccent"
+                android:textIsSelectable="true"
+                android:textSize="16sp"
+                app:fontFamily="sans-serif-condensed" />
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

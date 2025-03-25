@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textIsSelectable="true"
+    tools:context=".Activity_tab2">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:alpha="100"
+        android:text="Output:"
+        android:textColor="@color/colorAccent"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textIsSelectable="true"
+        app:fontFamily="sans-serif-condensed-light"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="5dp"
+        android:textIsSelectable="true"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/condDriver"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/condDriver2"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:text="Driver Gas:"
+                android:textColor="@color/colorAccent"
+                android:textIsSelectable="true"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-condensed" />
+
+            <TextView
+                android:id="@+id/condDriver2"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/conditions2"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:text="TextView"
+                android:textIsSelectable="true"
+                android:textSize="19sp"
+                android:textStyle="italic"
+                app:fontFamily="sans-serif-condensed" />
+
+
+            <TextView
+                android:id="@+id/conditions1"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/out11"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="10dp"
+                android:text="Driven Gas (air):"
+                android:textColor="@color/colorAccent"
+                android:textIsSelectable="true"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-condensed" />
+
+            <TextView
+                android:id="@+id/out11"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/conditions2"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:text="TextView"
+                android:textIsSelectable="true"
+                android:textSize="19sp"
+                android:textStyle="italic"
+                app:fontFamily="sans-serif-condensed" />
+
+
+            <TextView
+                android:id="@+id/conditions2"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="10dp"
+                android:text="Shocked Conditions:"
+                android:textColor="@color/colorAccent"
+                android:textIsSelectable="true"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-condensed" />
+
+
+            <TextView
+                android:id="@+id/out12"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:text="TextView"
+                android:textIsSelectable="true"
+                android:textSize="19sp"
+                android:textStyle="italic"
+                app:fontFamily="sans-serif-condensed" />
+
+            <TextView
+                android:id="@+id/conditions5"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Reflected Conditions:"
+                android:textColor="@color/colorAccent"
+                android:textIsSelectable="true"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-condensed" />
+
+            <TextView
+                android:id="@+id/out25"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:text="TextView"
+                android:textIsSelectable="true"
+                android:textSize="19sp"
+                android:textStyle="italic"
+                app:fontFamily="sans-serif-condensed" />
+
+            <TextView
+                android:id="@+id/reservoir"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Reservoir Conditions:"
+                android:textColor="@color/colorAccent"
+                android:textIsSelectable="true"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-condensed" />
+
+            <TextView
+                android:id="@+id/out58"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:text="TextView"
+                android:textIsSelectable="true"
+                android:textSize="19sp"
+                android:textStyle="italic"
+                app:fontFamily="sans-serif-condensed" />
+
+            <TextView
+                android:id="@+id/Frozen"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Frozen Nozzle Flow:"
+                android:textColor="@color/colorAccent"
+                android:textIsSelectable="true"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-condensed" />
+
+            <TextView
+                android:id="@+id/throat1"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:text="Throat:"
+                android:textColor="@color/colorAccent"
+                android:textIsSelectable="true"
+                android:textSize="19sp"
+                android:textStyle="italic"
+                app:fontFamily="sans-serif-condensed" />
+
+
+            <TextView
+                android:id="@+id/throat2"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:text="* Insert Area Ratio or Pitot Pressure"
+                android:textIsSelectable="true"
+                android:textSize="19sp"
+                android:textStyle="italic"
+                app:fontFamily="sans-serif-condensed" />
+
+
+            <TextView
+                android:id="@+id/FrozenArea"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Exit from Area Ratio:"
+                android:textColor="@color/colorAccent"
+                android:textIsSelectable="true"
+                android:textSize="19sp"
+                android:textStyle="italic"
+                app:fontFamily="sans-serif-condensed" />
+
+
+            <TextView
+                android:id="@+id/frozenA"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:text="* Insert Area Ratio"
+                android:textIsSelectable="true"
+                android:textSize="19sp"
+                android:textStyle="italic"
+                app:fontFamily="sans-serif-condensed" />
+
+            <TextView
+                android:id="@+id/FrozenArea"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Exit from Pitot:"
+                android:textColor="@color/colorAccent"
+                android:textIsSelectable="true"
+                android:textSize="19sp"
+                android:textStyle="italic"
+                app:fontFamily="sans-serif-condensed" />
+
+
+            <TextView
+                android:id="@+id/frozenP"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:text="* Insert Pitot Pressure"
+                android:textIsSelectable="true"
+                android:textSize="19sp"
+                android:textStyle="italic"
+                app:fontFamily="sans-serif-condensed" />
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

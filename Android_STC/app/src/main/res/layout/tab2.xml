@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/titleShockTube"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:alpha="100"
+        android:text="Shock Tube"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fontFamily="sans-serif-condensed-light"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/Titledriversection"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:alpha="100"
+        android:text="Driver Gas*:"
+        android:textColor="@color/colorAccent"
+        android:textSize="17sp"
+        app:fontFamily="sans-serif-smallcaps"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleShockTube" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toEndOf="@+id/Titledriversection"
+        app:layout_constraintTop_toBottomOf="@+id/titleShockTube" />
+
+
+    <EditText
+        android:id="@+id/inputp4"
+        style="@android:style/Widget.AutoCompleteTextView"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:ems="10"
+        android:hint="p4 (MPa)*"
+        android:inputType="numberDecimal"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColorLink="@color/colorAccent"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Titledriversection" />
+
+    <EditText
+        android:id="@+id/inputt4"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="1dp"
+        android:ems="10"
+        android:hint="T4 (K)*"
+        android:inputType="numberDecimal"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColorLink="@color/colorAccent"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/inputp1"
+        app:layout_constraintTop_toBottomOf="@+id/Titledriversection" />
+
+    <TextView
+        android:id="@+id/Titledrivensection"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:alpha="100"
+        android:text="Driven Gas: air"
+        android:textColor="@color/colorAccent"
+        android:textSize="17sp"
+        app:fontFamily="sans-serif-smallcaps"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputp4" />
+
+
+    <EditText
+        android:id="@+id/inputp1"
+        style="@android:style/Widget.AutoCompleteTextView"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:ems="10"
+        android:hint="p1 (kPa)*"
+        android:inputType="numberDecimal"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColorLink="@color/colorAccent"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Titledrivensection" />
+
+    <EditText
+        android:id="@+id/inputt1"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:ems="10"
+        android:hint="T1 (K)*"
+        android:inputType="numberDecimal"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColorLink="@color/colorAccent"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/inputp1"
+        app:layout_constraintTop_toBottomOf="@+id/Titledrivensection" />
+
+
+    <TextView
+        android:id="@+id/gainfactor"
+        android:layout_width="140dp"
+        android:layout_height="23dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="22dp"
+        android:alpha="100"
+        android:text="G. Factor g**:"
+        android:textColor="@color/colorAccent"
+        android:textSize="17sp"
+        app:fontFamily="sans-serif-smallcaps"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputp1" />
+
+    <EditText
+        android:id="@+id/inputgf"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="6dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:singleLine="false"
+        android:text="1.0"
+        android:textColorLink="@color/colorAccent"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/gainfactor"
+        app:layout_constraintTop_toBottomOf="@+id/inputp1" />
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:alpha="100"
+        android:text="Res. Pressure:"
+        android:textColor="@color/colorAccent"
+        android:textSize="17sp"
+        app:fontFamily="sans-serif-smallcaps"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gainfactor" />
+
+    <EditText
+        android:id="@+id/inputp0"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="p0 (MPa)"
+        android:inputType="numberDecimal"
+        android:singleLine="false"
+        android:textColorLink="@color/colorAccent"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/inputgf" />
+
+
+    <TextView
+        android:id="@+id/titleNozzle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:alpha="100"
+        android:text="Nozzle Exit"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fontFamily="sans-serif-condensed-light"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+
+    <TextView
+        android:id="@+id/titleArea"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:alpha="100"
+        android:text="Area Ratio:"
+        android:textColor="@color/colorAccent"
+        android:textSize="17sp"
+        app:fontFamily="sans-serif-smallcaps"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleNozzle" />
+
+
+    <EditText
+        android:id="@+id/inputar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:ems="10"
+        android:hint="unit"
+        android:inputType="numberDecimal"
+        android:singleLine="false"
+        android:textColorLink="@color/colorAccent"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleArea" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:alpha="100"
+        android:text="Pitot Pressure:"
+        android:textColor="@color/colorAccent"
+        android:textSize="17sp"
+        app:fontFamily="sans-serif-smallcaps"
+        app:layout_constraintStart_toEndOf="@+id/titleArea"
+        app:layout_constraintTop_toBottomOf="@+id/titleNozzle" />
+
+    <EditText
+        android:id="@+id/inputp02"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="1dp"
+        android:ems="10"
+        android:hint="pt (kPa)"
+        android:inputType="numberDecimal"
+        android:singleLine="false"
+        android:textColorLink="@color/colorAccent"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/inputar"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/button1"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorPrimaryDark"
+        android:clickable="true"
+        android:text="[Go!]"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/inputar" />
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:text="*minimum data required"
+        android:textSize="13sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputar" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="7dp"
+        android:text="**see references"
+        android:textSize="13sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+</android.support.constraint.ConstraintLayout>
