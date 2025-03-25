@@ -6,21 +6,16 @@ tags:
   - Supersonics
   - Hypersonics 
 authors:
--name: Pedro Matos
-    equal-contrib: true
-    affiliation: '1'
-
--name: Leda Vialta
-    equal-contrib: true
-    affiliation: '1'
-
--name: Dermeval Carinhana
-    equal-contrib: true
-    affiliation: '1'
-
+ -name: Pedro Matos
+        affiliation: '1'
+ -name: Leda Vialta
+        affiliation: '1'
+ -name: Dermeval Carinhana
+        affiliation: '1'
 affiliations:
--name: Instituto de Estudos Avançados, DCTA, Brazil
-   index: 1
+ -name: Instituto de Estudos Avançados, DCTA, Brazil
+  index: 1
+repository: https://github.com/matos-pedro/Shock_Tunnel_Calculator
 date: 25 March 2025
 bibliography: paper.bib
 ---
