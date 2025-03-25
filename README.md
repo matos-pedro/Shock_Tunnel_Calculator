@@ -176,6 +176,8 @@ The results calculated by the app show that when using helium as the Driver gas,
 
 In order to calculate the g factor, experimental data from tunnels T1 and T2 were used to construct the graphs in Figures 1 and 2, which relate the incident Mach number s with the initial Driven pressure p1, while keeping the Driver pressure and ambient temperature constant
 
+<img src="Images/T1_Validacao.png" alt="T1 ShockTunnel: Ms versus experimental p1 (points) and respective simulated curves for three g factors of 0.45, 0.55, and 0.65." height="75" />
+
 ![T1 ShockTunnel: Ms versus experimental p1 (points) and respective simulated curves for three g factors of 0.45, 0.55, and 0.65.](Images/T1_Validacao.png){height="150pt"}
 
 ![T2 Shock Tunnel T2: Ms versus experimental p1 (points) and three simulated curves for three g factors for both air and helium as the Driver gas.](Images/T2_Validacao.png){height="150pt"}
