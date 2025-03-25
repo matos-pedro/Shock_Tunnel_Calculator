@@ -173,13 +173,13 @@ Table 2. Comparison between the app and other similar programs; initial conditio
 | 10           | 3461               | 6103            | 4275            | 4272             | 4252          | 13544           | 7686            | 7546             | 7567          | 0.28          |
 | 15           | 5191               | 13380           | 7330            | 7272             | 7258          | 30186           | 12057           | 11694            | 11653         | 0.35          |
 
-### 4.2 Free Stream
+## Free Stream
 
 The procedure adopted for estimating the free stream is validated by comparing it with experimental data for the Pitot pressure obtained through shock tunnel T2 [@pereira09]. For this, the initial temperature of the test gas was fixed at 298 K, and the area ratio of the nozzle was set to 220.57. The input parameters that varied were: initial pressure (p1), incident shock wave speed (us), and reservoir pressure (p0).
 
 Tables 3 and 4 summarize the comparison between measured and calculated Pitot pressures, distinguishing by the composition of the Driver gas: Table 3 was constructed from experiments using helium as the Driver gas at 20.7 MPa, while Table 4 was based on experiments with air at the same pressure of 20.7 MPa. The deviation shown corresponds to the absolute deviation calculated between the experimental and calculated Pitot values. For comparison purposes, the tables also display the equivalent area ratios estimated from the experimental Pitot pressure recorded.
 
-#### Table 3. Experimental Pitot Pressure (pt, Experimental Output) and Calculated Pitot Pressure (pt, APP-Calculated) and Equivalent Area Ratio Calculated (eq A/A*, APP-Calculated); Driver Gas: Helium.
+Table 3. Experimental Pitot Pressure (pt, Experimental Output) and Calculated Pitot Pressure (pt, APP-Calculated) and Equivalent Area Ratio Calculated (eq A/A*, APP-Calculated); Driver Gas: Helium.
 
 | Input    |          |      |          | Experimental Output | APP - Calculated |         | Deviation |
 | -------- | -------- | ---- | -------- | ------------------- | ---------------- | ------- | --------- |
@@ -189,7 +189,7 @@ Tables 3 and 4 summarize the comparison between measured and calculated Pitot pr
 | 96       | 1427     | 4.12 | 13.7     | 112                 | 106              | 208     | 5.6       |
 | 288      | 1154     | 3.34 | 19.5     | 156                 | 147              | 208     | 5.8       |
 
-#### Table 4. Experimental Pitot Pressure (pt, Experimental Output) and Calculated Pitot Pressure (pt, APP-Calculated) and Equivalent Area Ratio Calculated (eq A/A*, APP-Calculated); Driver Gas: Air.
+Table 4. Experimental Pitot Pressure (pt, Experimental Output) and Calculated Pitot Pressure (pt, APP-Calculated) and Equivalent Area Ratio Calculated (eq A/A*, APP-Calculated); Driver Gas: Air.
 
 | Input    |          |      |          | Experimental Output | APP - Calculated |         | Deviation     |
 | -------- | -------- | ---- | -------- | ------------------- | ---------------- | ------- | ------------- |
@@ -200,5 +200,22 @@ Tables 3 and 4 summarize the comparison between measured and calculated Pitot pr
 | 288      | 737      | 2.13 | 5.4      | 50                  | 40               | 174     | 26.5          |
 
 The results calculated by the app show that when using helium as the Driver gas, which induces the test gas to higher stagnation pressures, the Pitot pressures showed deviations of at most 8.3%, lower than the 26% relative deviation observed when using air as the Driver gas. In absolute terms, the difference in pressures ranged from 5 to 12 kPa in both cases.
+
+## The g Factor
+
+In order to calculate the g factor, experimental data from tunnels T1 and T2 were used to construct the graphs in Figures 1 and 2, which relate the incident Mach number s with the initial Driven pressure p1, while keeping the Driver pressure and ambient temperature constant
+
+
+
+![Gráfico de Validação T1](Images/T1_Validacao.png){height="9pt"}
+Figure 1. Tunnel T1: Ms versus experimental p1 (points) and respective simulated curves for three g factors of 0.45, 0.55, and 0.65.
+
+Figure 2. Tunnel T2: Ms versus experimental p1 (points) and three simulated curves for three g factors for both air and helium as the Driver gas.
+
+For the results in Figure 1, corresponding to shock tunnel T1, Helium was used as the Driver gas at a pressure of 6 MPa. The tunnel is characterized by a unit area ratio between the Driver and Driven sections. According to the figure, the Ms x p1 relation can be explained by assuming a g factor of approximately 0.55 in the operational range between 8 and 130 kPa. It is noteworthy that an ideal g factor increases as the pressure p1 increases.
+
+For  the results in Figure 2, corresponding to shock tunnel T2, both Helium and air were used as the Driver gas, at a pressure of 20.7 MPa in both cases. The tunnel has an area ratio of 2.25 between the Driver and Driven sections. According to the figure, the Ms x p1 relation when using air can be explained by assuming a g factor of approximately 0.9 in the operational range between 7 and 290 kPa. When using Helium, an average g factor of 1.05 is identified. It is noted that due to the area ratio used, the tunnel has a g factor of approximately 1, regardless of the Driver gas. Again, it is observed that an ideal g factor increases as the pressure p1 increases.
+
+Thus, the T1 and T2 tunnels, with different characteristics, show that the g factor can be assumed constant for a wide operational range of p4/p1, and can be estimated from a reduced number of experiments. Therefore, from the obtained g factor, the application can be used for experiment characterization based on purely analytical considerations combined with the correction g factor.
 
 # References
