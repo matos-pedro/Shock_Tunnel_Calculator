@@ -90,6 +90,49 @@ Similarly to the previous step, a value for the density **r5** is guessed, allow
 
 ### Reservoir Condition
 
-The reservoir condition is included in the app to cover experiments performed under the under-tailored/over-tailored conditions, cases where successive expansion/compression waves, resulting from the interaction between the reflected shock wave and the contact surface, reach the test gas after the establishment of the reflected condition. While they cause entropy increases, the shock waves that occur in the over-tailored case can be approximated as isentropic processes [3], simplifying the estimation of the reservoir condition. Expansion waves, resulting from the under-tailored case, are naturally isentropic.
+The reservoir condition is included in the app to cover experiments performed under the under-tailored/over-tailored conditions, cases where successive expansion/compression waves, resulting from the interaction between the reflected shock wave and the contact surface, reach the test gas after the establishment of the reflected condition. While they cause entropy increases, the shock waves that occur in the over-tailored case can be approximated as isentropic processes [@copper1961], simplifying the estimation of the reservoir condition. Expansion waves, resulting from the under-tailored case, are naturally isentropic.
 
 Thus, knowing the specific entropy **s5** of the reflected condition and providing the reservoir pressure **p0**, the reservoir conditions are calculated using the equations of state from [@srini87]. In the absence of a measurement for the reservoir pressure, the app assumes its value is equal to that calculated for the reflected condition: **p0 = p5**.
+
+
+
+## Nozzle-Exit Flow
+
+The free flow will be calculated and displayed if at least one of the following parameters is entered by the user: the nozzle area ratio, represented by **A/A***, or an experimental measurement of the Pitot pressure, denoted as **pt**. To do this, it is assumed that the flow evolves from the reservoir condition to the nozzle exit in an adiabatic and non-reactive manner.
+
+In the first case, when the area ratio **A/A*** is known, the Mach number of the free flow **Me** is found using the following equation:
+
+$$
+\left(\frac{A}{A^*}\right)^2 = \frac{1}{M_e^2} \left[\frac{2}{\gamma_0 + 1} \left( 1 + \frac{\gamma_0 - 1}{2}M_e^2 \right)\right]^{\frac{\gamma_0 + 1}{\gamma_0 - 1}}
+$$
+
+From the Mach number **Me** and the reservoir condition, the free flow can be calculated using the following isentropic relations:
+
+$$
+T_e = T_0 \left[ 1 + \frac{M_e^2 (\gamma_0 - 1)}{2} \right] \tag{10}
+$$
+
+$$
+p_e = p_0 \left[ 1 + \frac{M_e^2 (\gamma_0 - 1)}{2} \right]^{\frac{-\gamma_0}{\gamma_0 - 1}} \tag{11}
+$$
+
+$$
+r_e = r_0 \left[ 1 + \frac{M_e^2 (\gamma_0 - 1)}{2} \right]^{\frac{-1}{\gamma_0 - 1}} \tag{12}
+$$
+
+The app also provides an estimate for the Pitot pressure. To do so, it is assumed that a normal shock wave will form in front of a Pitot sensor, bringing the free flow to a new condition, represented in the app by the subscript **p**. This condition is calculated using equations 1 and 2 from section 3.1, assuming a velocity of $M_e \sqrt{\gamma_0 p_e/r_e}$ for the free flow. The velocity **up**, in turn, is calculated using the relation $u_e(r_e/r_p)$ . The conditions for the Pitot, with subscript **t** in the app, are finally calculated by assuming that the "post-shock" flow reaches stagnation in an isentropic manner, using relations identical to equations 8, 9, and 10.
+
+In the second case, when the Pitot pressure is used as input, the app employs the secant method to identify the area ratio whose corresponding Pitot pressure matches the entered value. This area ratio is then shown in the output log as **A/A***. Once the equivalent area ratio is identified, the numerical procedure follows the same steps as when the area ratio is known.
+
+Given the nature of the methodology adopted, three parameters are required for the basic use of the app: the initial pressure and temperature of the test gas, **p1** and **t1**, and the velocity of the incident shock wave, **us**. The 'Experimental Data' and 'Analytical Ms' tabs differ solely in how the velocity **us** is identified and will be explained later. By entering the area ratio **A/A*** and Pitot pressure **pp**, the free flow will be calculated independently for both cases and shown in the output log.
+
+## Determination of **us**, the incident shock wave velocity
+
+All the calculations presented here are based on the initial condition of the test gas and the velocity of the incident shock wave, a commonly measured parameter in shock tube experiments.
+Thus, the 'Experimental Data' tab has fields for entering the initial pressure and temperature of the air (in kilopascals, kPa, and Kelvin, K), as well as an entry for the incident shock wave velocity, which should be entered in meters per second (m/s). Pressing the [GO!] button will trigger the procedure outlined in sections 1.1 and 1.2, and a new window will open, providing an output log with the results obtained.
+
+The 'Analytical Ms' tab, on the other hand, aims to estimate the primary shock wave velocity **us**, after which the entire procedure previously shown will follow. First, the Mach number **Ms** is estimated using the following relation:
+13
+
+This equation differs from the standard shock tube equation due to the inclusion of the parameter **g**, an empirical gain factor added to account for devices where the high and low-pressure sections have distinct cross-sectional areas [@resler52]. Due to simplifications in the development leading to equation 11, such as assuming that diaphragm rupture is instantaneous, the Mach number **Ms** calculated will be lower than that obtained experimentally. For this reason, equation 11 is used to estimate **us**.
+Once **Ms** is calculated, the procedure follows the same steps as in the previous case. The app will estimate the free flow and the shocked and reflected conditions based on the initial conditions provided. The Pitot pressure **pp** will be estimated from the velocity **us** using the corresponding relations [1]. Finally, the shock wave velocity **us** will be estimated with the app [@minucci91].
