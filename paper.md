@@ -33,7 +33,7 @@ Additionally, the application can estimate the free-stream flow conditions at th
 
 The incident shock wave velocity can be directly input based on experimental data provided by the user or estimated from the driver gas conditions, incorporating an empirical correction factor. This allows the app to support both the analysis of completed tests and the prediction of expected conditions for future experiments.
 
-With a simple and efficient interface, the *Shock Tube and Tunnel Calculator quickly provides essential information for interpreting shock tunnel experiments, facilitating both analysis and test planning.
+With a simple and efficient interface, the Shock Tube and Tunnel Calculator quickly provides essential information for interpreting shock tunnel experiments, facilitating both analysis and test planning.
 
 
 
