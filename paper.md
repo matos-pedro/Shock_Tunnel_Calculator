@@ -210,6 +210,15 @@ In order to calculate the g factor, experimental data from tunnels T1 and T2 wer
 ![Gráfico de Validação T1](Images/T1_Validacao.png)
 Figure 1. Tunnel T1: Ms versus experimental p1 (points) and respective simulated curves for three g factors of 0.45, 0.55, and 0.65.
 
+
+![Gráfico de Validação T2](Images/T2_Validacao.png){height="50pt"}
+
+
+
+
+
+![Gráfico de Validação T2](Images/T2_Validacao.png){height="100pt"}
+
 Figure 2. Tunnel T2: Ms versus experimental p1 (points) and three simulated curves for three g factors for both air and helium as the Driver gas.
 
 For the results in Figure 1, corresponding to shock tunnel T1, Helium was used as the Driver gas at a pressure of 6 MPa. The tunnel is characterized by a unit area ratio between the Driver and Driven sections. According to the figure, the Ms x p1 relation can be explained by assuming a g factor of approximately 0.55 in the operational range between 8 and 130 kPa. It is noteworthy that an ideal g factor increases as the pressure p1 increases.
