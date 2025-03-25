@@ -207,7 +207,7 @@ In order to calculate the g factor, experimental data from tunnels T1 and T2 wer
 
 
 
-![Gráfico de Validação T1](Images/T1_Validacao.png){height="9pt"}
+![Gráfico de Validação T1](Images/T1_Validacao.png)
 Figure 1. Tunnel T1: Ms versus experimental p1 (points) and respective simulated curves for three g factors of 0.45, 0.55, and 0.65.
 
 Figure 2. Tunnel T2: Ms versus experimental p1 (points) and three simulated curves for three g factors for both air and helium as the Driver gas.
