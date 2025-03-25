@@ -128,11 +128,19 @@ Given the nature of the methodology adopted, three parameters are required for t
 
 ## Determination of **us**, the incident shock wave velocity
 
-All the calculations presented here are based on the initial condition of the test gas and the velocity of the incident shock wave, a commonly measured parameter in shock tube experiments.
-Thus, the 'Experimental Data' tab has fields for entering the initial pressure and temperature of the air (in kilopascals, kPa, and Kelvin, K), as well as an entry for the incident shock wave velocity, which should be entered in meters per second (m/s). Pressing the [GO!] button will trigger the procedure outlined in sections 1.1 and 1.2, and a new window will open, providing an output log with the results obtained.
+All the calculations presented here are based on the initial condition of the test gas and the velocity of the incident shock wave, a commonly measured parameter in shock tube experiments. Thus, the 'Experimental Data' tab has fields for entering the initial pressure and temperature of the air (in kilopascals, kPa, and Kelvin, K), as well as an entry for the incident shock wave velocity, which should be entered in meters per second (m/s). Pressing the [GO!] button will trigger the procedure outlined in sections 1.1 and 1.2, and a new window will open, providing an output log with the results obtained.
 
 The 'Analytical Ms' tab, on the other hand, aims to estimate the primary shock wave velocity **us**, after which the entire procedure previously shown will follow. First, the Mach number **Ms** is estimated using the following relation:
-13
 
-This equation differs from the standard shock tube equation due to the inclusion of the parameter **g**, an empirical gain factor added to account for devices where the high and low-pressure sections have distinct cross-sectional areas [@resler52]. Due to simplifications in the development leading to equation 11, such as assuming that diaphragm rupture is instantaneous, the Mach number **Ms** calculated will be lower than that obtained experimentally. For this reason, equation 11 is used to estimate **us**.
-Once **Ms** is calculated, the procedure follows the same steps as in the previous case. The app will estimate the free flow and the shocked and reflected conditions based on the initial conditions provided. The Pitot pressure **pp** will be estimated from the velocity **us** using the corresponding relations [1]. Finally, the shock wave velocity **us** will be estimated with the app [@minucci91].
+
+$$
+\frac{p_4}{p_1} g = \left[ 1 + \frac{2\gamma_1}{\gamma_1 + 1} (M_s^2 - 1) \right] \left[ 1 - \frac{\gamma_4 - 1}{\gamma_1 + 1} \frac{a_1}{a_4} g^{\frac{1 - \gamma_4}{2\gamma_4}} \left( \frac{M_s - 1}{M_s} \right) \right]^{-\frac{2\gamma_4}{\gamma_4 - 1}} \tag{13}
+$$
+
+
+This equation differs from the standard shock tube equation due to the inclusion of the parameter **g**, an empirical gain factor added to account for devices where the high and low-pressure sections have distinct cross-sectional areas [@resler52]. Due to simplifications, such as assuming that diaphragm rupture is instantaneous, the Mach number **Ms** calculated will be lower than that obtained experimentally. For this reason, equation 11 is used to estimate **us**.
+Once **Ms** is calculated, the procedure follows the same steps as in the previous case. The app will estimate the free flow and the shocked and reflected conditions based on the initial conditions provided. The Pitot pressure **pp** will be estimated from the velocity **us** using the corresponding relations [@srini87]. Finally, the app will estimate the shock wave velocity **us**.
+
+The minimum data required to use the 'Analytical Ms' are: the driver composition, where you can choose between the gases He, air, N2, H2, and Ar; the pressure and temperature of the driver gas, which must be entered in megapascals and kelvin units; finally, similar to the 'Experimental Data' tab, the initial condition of the test gas.
+
+The [GO!] button should be pressed again to execute the calculation and view the output log.
