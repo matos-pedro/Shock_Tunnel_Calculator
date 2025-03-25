@@ -152,14 +152,14 @@ The results are presented in three stages: first, in section 2.1, parameters cal
 
 ## Shock Tube
 
-The calculations for the shock tube were compared to results obtained through the programs GasEq[7], CeaRun[8], and WiSTL[9]. While the first two are programs used to calculate thermodynamic properties for chemical equilibrium of various mixtures, the last one corresponds to a calculator developed for studying shock tubes, assuming the simplification of a calorically perfect gas.
+The calculations for the shock tube were compared to results obtained through the programs GasEq[@morley07], CeaRun[@gordon1994], and WiSTL[@wisl2025]. While the first two are programs used to calculate thermodynamic properties for chemical equilibrium of various mixtures, the last one corresponds to a calculator developed for studying shock tubes, assuming the simplification of a calorically perfect gas.
 The comparisons are made by fixing the pressure (p1) at 101 kPa and temperature (T1) at 298 K in the low-pressure section, while varying the shock Mach number from 2 to 15. Tables 1 and 2 summarize, for the shock and reflected conditions respectively, the pressure and temperature data obtained through the app and their corresponding values from other programs.
 It is noted that the largest discrepancies occur when comparing results from WiSTL, a program whose approach corresponds to a limiting theoretical case, characterized by neglecting phenomena such as dissociation and activation of internal energy modes.
 The 'Deviation %' column, constructed to illustrate the maximum relative deviation between parameters calculated by the app and the chemical equilibrium programs, shows deviations lower than 3% for pressure and 2% for temperature data, respectively.
 
 Table 1. Comparison between the app and other similar programs; initial conditions: p1 = 101 kPa, T1 = 298 K. The data corresponds to the calculated pressures for shock and reflected conditions.
 
-| Pressure Comparison   |                      | Shocked Condition:    |                      |                       |                    | Reflected Condition:   |                       |                      |                       |                    |
+| Input                 |                      | Shocked:              |                      |                       |                    | Reflected:             |                       |                      |                       |                    |
 | --------------------- | -------------------- | --------------------- | -------------------- | --------------------- | ------------------ | ---------------------- | --------------------- | -------------------- | --------------------- | ------------------ |
 | Ms                    | us (m/s)             | WiSTL                 | Gaseq                | CeaRun                | App                | WiSTL                  | Gaseq                 | CeaRun               | App                   | Δ%                |
 | --------------------- | -------------------- | --------------------- | -------------------- | --------------------- | ------------------ | ---------------------- | --------------------- | -------------------- | --------------------- | ------------------ |
