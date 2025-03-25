@@ -1,6 +1,10 @@
 ```
 ---
 title: 'Shock Tunnel Calculator'
+tags:
+  - Shock Tunnel
+  - Supersonics
+  - Hypersonics 
 authors:
 -name: Pedro Matos
     equal-contrib: true
