@@ -144,3 +144,44 @@ Once **Ms** is calculated, the procedure follows the same steps as in the previo
 The minimum data required to use the 'Analytical Ms' are: the driver composition, where you can choose between the gases He, air, N2, H2, and Ar; the pressure and temperature of the driver gas, which must be entered in megapascals and kelvin units; finally, similar to the 'Experimental Data' tab, the initial condition of the test gas.
 
 The [GO!] button should be pressed again to execute the calculation and view the output log.
+
+
+# RESULTS AND VALIDATION
+
+The results are presented in three stages: first, in section 2.1, parameters calculated by the app for the shock and reflected conditions are compared with similar results obtained through programs available online; second, in section 2.2, a comparison is made between experimental and calculated values for the Pitot pressure of the free stream; finally, the effects of the g factor are presented for two distinct tunnels.
+
+## Shock Tube
+
+The calculations for the shock tube were compared to results obtained through the programs GasEq[7], CeaRun[8], and WiSTL[9]. While the first two are programs used to calculate thermodynamic properties for chemical equilibrium of various mixtures, the last one corresponds to a calculator developed for studying shock tubes, assuming the simplification of a calorically perfect gas.
+The comparisons are made by fixing the pressure (p1) at 101 kPa and temperature (T1) at 298 K in the low-pressure section, while varying the shock Mach number from 2 to 15. Tables 1 and 2 summarize, for the shock and reflected conditions respectively, the pressure and temperature data obtained through the app and their corresponding values from other programs.
+It is noted that the largest discrepancies occur when comparing results from WiSTL, a program whose approach corresponds to a limiting theoretical case, characterized by neglecting phenomena such as dissociation and activation of internal energy modes.
+The 'Deviation %' column, constructed to illustrate the maximum relative deviation between parameters calculated by the app and the chemical equilibrium programs, shows deviations lower than 3% for pressure and 2% for temperature data, respectively.
+
+Table 1. Comparison between the app and other similar programs; initial conditions: p1 = 101 kPa, T1 = 298 K. The data corresponds to the calculated pressures for shock and reflected conditions.
+
+| Pressure Comparison   |                      | Shocked Condition:    |                      |                       |                    | Reflected Condition:   |                       |                      |                       |                    |
+| --------------------- | -------------------- | --------------------- | -------------------- | --------------------- | ------------------ | ---------------------- | --------------------- | -------------------- | --------------------- | ------------------ |
+| Ms                    | us (m/s)             | WiSTL                 | Gaseq                | CeaRun                | App                | WiSTL                  | Gaseq                 | CeaRun               | App                   | Δ%                |
+| --------------------- | -------------------- | --------------------- | -------------------- | --------------------- | ------------------ | ---------------------- | --------------------- | -------------------- | --------------------- | ------------------ |
+| 2                     | 692                  | 0.46                  | 0.46                 | 0.46                  | 0.47               | 2.0                    | 1.52                  | 1.52                 | 1.52                  | 1.56               |
+| 5                     | 1730                 | 2.94                  | 3.02                 | 3.01                  | 3.06               | 1.6                    | 19.36                 | 21.00                | 20.99                 | 21.32              |
+| 7                     | 2422                 | 5.78                  | 6.02                 | 6.01                  | 6.11               | 1.7                    | 41.63                 | 49.07                | 49.00                 | 49.72              |
+| 10                    | 3461                 | 11.8                  | 12.6                 | 12.6                  | 12.8               | 1.8                    | 89.51                 | 127.0                | 126.4                 | 129.5              |
+| 15                    | 5191                 | 26.6                  | 28.7                 | 28.7                  | 29.3               | 1.7                    | 207.3                 | 331.9                | 328.5                 | 336.4              |
+
+Table 2. Comparison between the app and other similar programs; initial conditions: p1 = 101 kPa, T1 = 298 K. The data corresponds to the calculated temperatures for shock and reflected conditions.
+
+
+
+| Temperature Comparison  |                    | Shock Condition:      |                      |                       |                    | Reflected Condition:   |                       |                      |                       |                    |
+| ----------------------- | ------------------ | --------------------- | -------------------- | --------------------- | ------------------ | ---------------------- | --------------------- | -------------------- | --------------------- | ------------------ |
+| Ms                      | us (m/s)           | WiSTL                 | Gaseq                | CeaRun                | App                | WiSTL                  | Gaseq                 | CeaRun               | App                   | Δ%                |
+| ----------------------- | ------------------ | --------------------- | -------------------- | --------------------- | ------------------ | ---------------------- | --------------------- | -------------------- | --------------------- | ------------------ |
+| 2                       | 692                | 504                   | 501                  | 501                   | 501                | 747                    | 730                   | 729                  | 732                   | 0.36               |
+| 5                       | 1730               | 1735                  | 1588                 | 1587                  | 1601               | 3557                   | 2842                  | 2842                 | 2875                  | 1.15               |
+| 7                       | 2422               | 3133                  | 2642                 | 2642                  | 2664               | 6753                   | 4553                  | 4548                 | 4525                  | 0.51               |
+| 10                      | 3461               | 6103                  | 4275                 | 4272                  | 4252               | 13544                  | 7686                  | 7546                 | 7567                  | 0.28               |
+| 15                      | 5191               | 13380                 | 7330                 | 7272                  | 7258               | 30186                  | 12057                 | 11694                | 11653                 | 0.35               |
+
+
+# References
