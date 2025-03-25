@@ -57,6 +57,39 @@ Where the subscript **s** refers to the primary shock wave, and the subscripts *
 
 Although the initial condition of the test gas is known, along with the velocity of the incident shock wave (a commonly measured parameter), the lack of information about the shocked gas prevents direct application of the above equations, so an iterative approach is adopted.
 
-Initially, the density of the shocked region is guessed, allowing the calculation of **p2** and **h2**. Then, the density **r2** is calculated using an equation of state that relates density, pressure, and specific enthalpy, or more precisely: **.** Once a new density is defined, the parameters **p2** and **h2** are recalculated, allowing the density to be recalculated again. This procedure is repeated until a convergence criterion is met. Finally, the velocity **u2** is calculated. As a direct consequence of using an equation of state, the procedure assumes that the air (test gas) evolves between equilibrium states.
+Initially, the density of the shocked region is guessed, allowing the calculation of **p2** and **h2**. Then, the density **r2** is calculated using an equation of state that relates density, pressure, and specific enthalpy. Once a new density is defined, the parameters **p2** and **h2** are recalculated, allowing the density to be recalculated again. This procedure is repeated until the convergence criterion is met. Finally, the velocity **u2** is calculated. As a direct consequence of using an equation of state, the procedure assumes that the air (test gas) evolves between equilibrium states.
 
 All the equations of state used in the app are based on the work of [@srini87], in which curve fitting was defined to calculate the thermodynamic properties of real air in equilibrium at temperatures up to 20,000 K. These curve fits can be found transcribed in Java in [@java2025], the code used and adapted in the development of the app.
+
+
+### Reflected Condition
+
+The reflected condition is calculated in a manner similar to the shocked condition; however, it differs in boundary condition: the reflected shock wave must have such magnitude that it brings the test gas to rest under the shocked condition, i.e., **u5 = 0**. Although this is a typical condition for shock tubes, this consideration is particularly valid in shock tunnels where the area restriction caused by the nozzle exceeds about 90% of the area of the cross-section and end of the tube. Thus, the conservation equations used to calculate the reflected condition are:
+
+$$
+u_r = \frac{u_2}{\left(\frac{r_5}{r_2} - 1\right)} \tag{5}
+$$
+
+$$
+p_5 = p_2 + r_2 \left( u_2 + u_r \right)^2 \left( 1 - \frac{r_2}{r_5} \right) \tag{6}
+$$
+
+$$
+h_5 = h_2 + \frac{p_5 - p_2}{2r_2} \left( 1 + \frac{r_2}{r_5} \right) \tag{7}
+$$
+
+$$
+r_5 = r_5(p_5, h_5) \tag{8}
+$$
+
+
+Where the symbol **ur** and subscript **5** refer to the velocity of the reflected shock wave and the reflected condition.
+
+Similarly to the previous step, a value for the density **r5** is guessed, allowing the calculation of the reflected shock velocity, pressure, and enthalpy. The density **r5** is then recalculated using an equation of state (equation 8) so that **p5** and **h5** can be recalculated. This procedure is performed until the convergence criterion is reached, at which point the reflected condition is specified.
+
+
+### Reservoir Condition
+
+The reservoir condition is included in the app to cover experiments performed under the under-tailored/over-tailored conditions, cases where successive expansion/compression waves, resulting from the interaction between the reflected shock wave and the contact surface, reach the test gas after the establishment of the reflected condition. While they cause entropy increases, the shock waves that occur in the over-tailored case can be approximated as isentropic processes [3], simplifying the estimation of the reservoir condition. Expansion waves, resulting from the under-tailored case, are naturally isentropic.
+
+Thus, knowing the specific entropy **s5** of the reflected condition and providing the reservoir pressure **p0**, the reservoir conditions are calculated using the equations of state from [@srini87]. In the absence of a measurement for the reservoir pressure, the app assumes its value is equal to that calculated for the reflected condition: **p0 = p5**.
