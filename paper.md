@@ -1,18 +1,14 @@
 ---
-title: 'pridepy: A Python package to download and search data from PRIDE database'
+title: 'STT Calculator, a mobile app for shock tunnel characterization'
 tags:
-  - Python
-  - proteomics
-  - mass spectrometry
-  - pride archive
-  - big data
+  - Shock Tunnel
+  - Supersonics
 authors:
   - name: Pedro Matos
     affiliation: 1
   - name: Leda Marise
     affiliation: 1
   - name: Dermeval Carinhanda
-    orcid: 0000-0001-6392-3759
     affiliation: 1
 affiliations:
  - name: Instituto de Estudos Avançados, DCTA, Brazil
