@@ -57,18 +57,17 @@ The app operates based on two approaches:
 1. **Shocked and Reflected Conditions**:
 
 - Using the shock velocity, the app calculates the following parameters:
-  - Pressure (p)
-  - Temperature (T)
-  - Density (ρ)
-  - Enthalpy (h)
-  - Velocity (u)
-  - Entropy (s)
-  - Mach number (M)
+  - pressure, temperature, density, specific enthalpy, specific entropy and velocity
+
+    ![An example of output for shocked and reflected conditions](Images/p1.jpeg){height="300pt"}
+
+
 
    2. **Free-Stream Flow (If a Nozzle is Present)**:
 
 - If the test facility includes a **nozzle**, the user can input the area ratio **A/A*** or a measured Pitot pressure. The app then calculates the free-stream flow, determining the Mach number and other related variables.
 
+  ![An example of nozzle exit output](Images/p2.jpeg){height="300pt"}
 
 
 
