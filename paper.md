@@ -1,5 +1,5 @@
 ---
-title: 'STT Calc, an Android app for shock tunnel characterization'
+title: 'STT Calc, an android app for shock tunnel characterization'
 tags:
   - Shock Tunnel
   - Supersonics
@@ -8,7 +8,7 @@ authors:
     affiliation: 1
   - name: Leda Marise
     affiliation: 1
-  - name: Dermeval Carinhanda
+  - name: Dermeval Carinhana
     affiliation: 1
 affiliations:
  - name: Instituto de Estudos Avançados, DCTA, Brazil
