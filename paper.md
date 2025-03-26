@@ -1,8 +1,10 @@
 ---
 title: 'STT Calc, an android app for shock tunnel characterization'
 tags:
-  - Shock Tunnel
-  - Supersonics
+  - shock tunnel
+  - supersonic flow
+  - real air modeling
+  - mobile app
 authors:
   - name: Pedro Matos
     affiliation: 1
