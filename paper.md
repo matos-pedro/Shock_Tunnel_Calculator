@@ -37,4 +37,8 @@ The incident shock wave velocity can be directly input based on experimental dat
 
 With a simple and efficient interface, the STT Calc quickly provides essential information for interpreting shock tunnel experiments, facilitating both analysis and test planning.
 
+# Acknowledgements
+
+The authors gratefully acknowledge the PROPHIPER program for its financial support and contribution to advancing hypersonic research and capabilities in Brazil. The authors would also like to thank the researchers and technicians from the Aerothermodynamics and Hypersonics Division for their support and assistance.
+
 # References
