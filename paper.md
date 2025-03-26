@@ -39,6 +39,33 @@ The incident shock wave velocity can be directly input based on experimental dat
 
 With a simple and efficient interface, the STT Calc quickly provides essential information for interpreting shock tunnel experiments, facilitating both analysis and test planning.
 
+# Pipeline
+
+**Data Input:**
+
+The app operates based on two approaches:
+
+- **Post-Experiment Approach**: The user provides the driven (or test) gas conditions such as pressure (p1), temperature (T1) and the primary shock speed (us).
+  ![The 'Experimental Data' tab](Images/experimental.jpeg)
+- **Pre-Experiment Approach**: The user provides the pressure and temperature data from the driver and driven sections of the shock tube (p1, T1, p1, p4) and the primary shock speed (us) is estimated based on theoretical asumptions.
+
+  ![The 'Analytical Ms' tab](Images/analytical_ms.jpeg)
+
+1. **Calculation of Shocked and Reflected Conditions**:
+
+   - Using the shock velocity, the app calculates the following conditions:
+     - Pressure (p)
+     - Temperature (T)
+     - Density (ρ)
+     - Enthalpy (h)
+     - Velocity (u)
+     - Entropy (s)
+     - Mach number (M)
+2. **Free-Stream Flow (If a Nozzle is Present)**:
+
+   - If the device includes a **nozzle**, the user can input the area ratio **A/A*** or the Pitot pressure. The app then calculates the free-stream flow, determining the Mach number and other related variables.
+
+
 # Acknowledgements
 
 The authors gratefully acknowledge the PROPHIPER program for its financial support and contribution to advancing hypersonic research and capabilities in Brazil. The authors would also like to thank the researchers and technicians from the Aerothermodynamics and Hypersonics Division for their support and assistance.
