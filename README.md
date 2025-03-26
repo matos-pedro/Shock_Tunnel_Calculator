@@ -1,3 +1,13 @@
+
+
+# The **STT Calculator**
+
+The  **STT Calculator**  is a mobile application designed to facilitate the rapid characterization of **shock tube** and **tunnel experiments**. It enables the estimation of post-shock gas conditions while considering real-air thermodynamic equilibrium effects.
+
+The app calculates parameters such as pressure, temperature, and flow velocity based on initial data, including the test gas pressure and temperature, as well as the incident shock wave velocity. Additionally, it can estimate free-stream conditions at the nozzle exit, assuming an isentropic process.
+
+With a simple and intuitive interface, the **STT Calculator** streamlines the analysis and planning of aerodynamic tests, allowing researchers, engineers, and students to quickly obtain experimental diagnostics without the need for complex software or extensive manual calculations.
+
 # The Code
 
 ## Shock Tube
@@ -176,14 +186,11 @@ The results calculated by the app show that when using helium as the Driver gas,
 
 In order to calculate the g factor, experimental data from tunnels T1 and T2 were used to construct the graphs in Figures 1 and 2, which relate the incident Mach number s with the initial Driven pressure p1, while keeping the Driver pressure and ambient temperature constant
 
-
 <img src="Images/T1_Validacao.png" alt="T1 ShockTunnel: Ms versus experimental p1 (points) and respective simulated curves for three g factors of 0.45, 0.55, and 0.65." height="250" />
 Figure 1: T1 ShockTunnel: Ms versus experimental p1 (points) and respective simulated curves for three g factors of 0.45, 0.55, and 0.65.
 
-
 <img src="Images/T2_Validacao.png" alt="T1 ShockTunnel: Ms versus experimental p1 (points) and respective simulated curves for three g factors of 0.45, 0.55, and 0.65." height="250" />
 Figure 1: T2 Shock Tunnel: Ms versus experimental p1 (points) and three simulated curves for three g factors for both air and helium as the Driver gas.
-
 
 For the results in Figure 1, corresponding to shock tunnel T1, Helium was used as the Driver gas at a pressure of 6 MPa. The tunnel is characterized by a unit area ratio between the Driver and Driven sections. According to the figure, the Ms x p1 relation can be explained by assuming a g factor of approximately 0.55 in the operational range between 8 and 130 kPa. It is noteworthy that an ideal g factor increases as the pressure p1 increases.
 
@@ -192,7 +199,6 @@ For  the results in Figure 2, corresponding to shock tunnel T2, both Helium and 
 Thus, the T1 and T2 tunnels, with different characteristics, show that the g factor can be assumed constant for a wide operational range of p4/p1, and can be estimated from a reduced number of experiments. Therefore, from the obtained g factor, the application can be used for experiment characterization based on purely analytical considerations combined with the correction g factor.
 
 # References
-
 
 - **[1] Srinivasan, S., Tanehill, J. C., & Weilmuenster, K. J.** (1987). *Simplified curve fits for the thermodynamic properties of equilibrium air*. NASA Langley Research Center. Relatório NASA-RP-1181.
 - **[2] Copper, J. A.** (1961). *An experimental investigation of the equilibrium interface technique*. Tese de doutorado, California Institute of Technology.
