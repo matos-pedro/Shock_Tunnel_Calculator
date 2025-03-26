@@ -45,10 +45,10 @@ With a simple and efficient interface, the STT Calc quickly provides essential i
 
 The app operates based on two approaches:
 
-- **Post-Experiment Approach**: The user provides the driven (or test) gas conditions such as pressure (p1), temperature (T1) and the primary shock speed (us).
+- **Post-Experiment Approach**: The user provides the driven (or test) gas conditions such as pressure (p1), temperature (T1) and the primary shock speed (us), as follows:
 
   ![The 'Experimental Data' tab](Images/experimental.jpeg){height="300pt"}
-- **Pre-Experiment Approach**: The user provides the pressure and temperature data from the driver and driven sections of the shock tube (p1, T1, p1, p4) and the primary shock speed (us) is estimated based on theoretical asumptions.
+- **Pre-Experiment Approach**: The user provides the pressure and temperature data from the driver and driven sections of the shock tube (p1, T1, p1, p4) and the primary shock speed (us) is estimated based on theoretical asumptions, as seen below.
 
   ![The 'Analytical Ms' tab](Images/analytical_ms.jpeg){height="300pt"}
 
@@ -57,7 +57,7 @@ The app operates based on two approaches:
 1. **Shocked and Reflected Conditions**:
 
 - Using the shock velocity, the app calculates the following parameters:
-  - pressure, temperature, density, specific enthalpy, specific entropy and velocity
+  - pressure, temperature, density, specific enthalpy, specific entropy and velocity, as follows:
 
     ![An example of output for shocked and reflected conditions](Images/p1.jpeg){height="300pt"}
 
@@ -65,7 +65,7 @@ The app operates based on two approaches:
 
    2. **Free-Stream Flow (If a Nozzle is Present)**:
 
-- If the test facility includes a **nozzle**, the user can input the area ratio **A/A*** or a measured Pitot pressure. The app then calculates the free-stream flow, determining the Mach number and other related variables.
+- If the test facility includes a **nozzle**, the user can input the area ratio **A/A*** or a measured Pitot pressure. The app then calculates the free-stream flow, determining the Mach number and other related variables, as follows:
 
   ![An example of nozzle exit output](Images/p2.jpeg){height="300pt"}
 
