@@ -73,6 +73,6 @@ The app operates based on two approaches:
 
 # Acknowledgements
 
-The authors gratefully acknowledge the PROPHIPER program for its financial support and contribution to advancing hypersonic research and capabilities in Brazil. The authors would also like to thank the researchers and technicians from the Aerothermodynamics and Hypersonics Division for their support and assistance.
+The authors gratefully acknowledge the CNPq, project number 407208/2022-4, for its financial support and contribution to advancing hypersonic research and capabilities in Brazil. The authors would also like to thank the researchers and technicians from the Aerothermodynamics and Hypersonics Division for their support and assistance.
 
 # References
